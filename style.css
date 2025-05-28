@@ -1,0 +1,104 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #222;
+  --card: white;
+  --primary: #004aad;
+}
+
+.dark-mode {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1f1f1f;
+  --primary: #66d9ef;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  object-fit: cover;
+}
+
+h1 {
+  color: var(--primary);
+  margin: 0;
+}
+
+.card {
+  background: var(--card);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: var(--primary);
+}
+
+#greeting {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0073ff;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: gray;
+}
