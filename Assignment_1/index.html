@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anmol Gupta - Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="showGreeting()">
+  <div class="main-container">
+    <header class="header">
+      <img src="profile.jpg" alt="Profile" class="profile-pic"/>
+      <div>
+        <h1>Arkajyoti Santra</h1>
+        <p>2nd Year Undergraduate at IIT Kanpur<br>Mathematics and Scientific Computing</p>
+      </div>
+      <button onclick="toggleTheme()" id="themeToggle">🌙 Toggle Theme</button>
+    </header>
+
+    <div id="greeting" class="greeting"></div>
+
+    <div class="card">
+      <h2>Hobbies</h2>
+      <p>Web Development, Data Analysis, Finance, Watching Anime</p>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Netflix Data Analysis:</b> Visualized genre trends using R and Python</li>
+        <li><b>MERN Stack E-commerce:</b> Full-stack platform with React and Node.js</li>
+        <li><b>Gender Cell Website:</b> Created accessible web pages</li>
+        <li><b>Options Trading Strategies:</b> Built and backtested market models</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills & Courses</h2>
+      <div id="skillsList">
+        <ul>
+          <li>C, C++, Python, HTML, JavaScript</li>
+          <li>R, LATEX, GitHub, MS Excel</li>
+          <li>Courses: Linear Algebra, Probability and Statistics, Real Analysis</li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button onclick="toggleReadMore()">Read More</button>
+        <button onclick="editSkills()">Edit</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:arkajyoti23@iitk.ac.in">anmolg23@iitk.ac.in</a></p>
+      <p>Phone: +91-7479015459</p>
+    </div>
+
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
